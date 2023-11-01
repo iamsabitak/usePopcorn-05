@@ -292,7 +292,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 
       return function () {
         document.title = "usePopcorn";
-        console.log(`Clean up effect for movie ${title}`);
+        // console.log(`Clean up effect for movie ${title}`);
       };
     },
     [title]
