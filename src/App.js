@@ -149,6 +149,15 @@ function Box({ children }) {
   );
 }
 
+function MovieList({ movies, onSelectMovie }) {
+  return (
+    <ul className="list list-movies">
+      {movies?.map((movie) => (
+        <Movie movie={movie} key={movie.imdbID} onSelectMovie={onSelectMovie} />
+      ))}
+    </ul>
+  );
+}
 /*
 function WatchedBox() {
   const [watched, setWatched] = useState(tempWatchedData);
@@ -173,16 +182,6 @@ function WatchedBox() {
   );
 }
 */
-
-function MovieList({ movies, onSelectMovie }) {
-  return (
-    <ul className="list list-movies">
-      {movies?.map((movie) => (
-        <Movie movie={movie} key={movie.imdbID} onSelectMovie={onSelectMovie} />
-      ))}
-    </ul>
-  );
-}
 
 function Movie({ movie, onSelectMovie }) {
   return (
