@@ -311,14 +311,14 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
   // if (imdbRating > 8) return <p>Greatest ever!</p>;
   // if (imdbRating > 8) [isTop, setIsTop] = useState(true);
 
-  const [isTop, setIsTop] = useState(imdbRating > 8);
-  console.log(isTop);
-  useEffect(
-    function () {
-      setIsTop(imdbRating > 8);
-    },
-    [imdbRating]
-  );
+  // const [isTop, setIsTop] = useState(imdbRating > 8);
+  // console.log(isTop);
+  // useEffect(
+  //   function () {
+  //     setIsTop(imdbRating > 8);
+  //   },
+  //   [imdbRating]
+  // );
 
   // const isTop = imdbRating > 8;
   // console.log(isTop);
