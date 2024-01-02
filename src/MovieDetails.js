@@ -54,6 +54,7 @@ export function MovieDetails({
   console.log(isTop);
 
   // const [avgRating, setAvgRating] = useState(0);
+  
   function handleAdd() {
     const newWatchedMovie = {
       imdbID: selectedId,
